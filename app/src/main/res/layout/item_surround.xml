@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.facebook.drawee.view.SimpleDraweeView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/sdvSurround"
+    android:layout_width="match_parent"
+    android:minHeight="@dimen/qb_px_150"
+    android:layout_height="wrap_content"
+    android:src="@mipmap/ic_logo"
+    fresco:failureImage="@mipmap/ic_logo"
+    fresco:placeholderImage="@mipmap/ic_logo">
+
+
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/qb_px_150"-->
+</com.facebook.drawee.view.SimpleDraweeView>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">世纪精广</string>
+    <string name="welcome">欢迎来到\"点位图\"</string>
+    <string name="tag">做你的贴心小助手</string>
+    <string name="input_tel">输入手机号</string>
+    <string name="loginIntroduce">该APP为企业后台分配账号，如有疑问请与北京世纪精广展览展示有限公司联系</string>
+    <string name="login">登录</string>
+    <string name="login_no_right">您暂无权限登录，请联系管理员</string>
+    <string name="tel">Tel:15100003525</string>
+    <string name="supermarket_list">列表</string>
+    <string name="supermarket_map">地图</string>
+    <string name="search_shop">搜索门店</string>
+</resources>

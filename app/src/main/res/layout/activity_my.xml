@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/tt"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/qb_px_50"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="@dimen/qb_px_50"
+            android:layout_height="@dimen/qb_px_50"
+            android:padding="@dimen/qb_px_15"
+            android:src="@mipmap/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="我的"
+            android:textColor="#43496a"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/headpic"
+        android:layout_width="@dimen/qb_px_50"
+        android:layout_height="@dimen/qb_px_50"
+        android:layout_marginLeft="@dimen/qb_px_20"
+        android:layout_marginTop="@dimen/qb_px_20"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tt"
+        fresco:failureImage="@mipmap/ic_my"
+        fresco:placeholderImage="@mipmap/ic_my" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/qb_px_50"
+        android:layout_marginLeft="@dimen/qb_px_30"
+        android:gravity="center"
+
+        android:text="王二狗"
+        android:textColor="#43486d"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/headpic"
+        app:layout_constraintLeft_toRightOf="@id/headpic"
+        app:layout_constraintTop_toTopOf="@id/headpic" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/qb_px_45"
+        android:layout_marginLeft="@dimen/qb_px_15"
+        android:gravity="center"
+        android:text="登录账户"
+        android:textColor="#43496a"
+        android:textSize="15sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/headpic" />
+
+    <TextView
+        android:id="@+id/account"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/qb_px_45"
+        android:layout_marginRight="@dimen/qb_px_15"
+        android:gravity="center"
+        android:text=""
+        android:textColor="#c2c6da"
+        android:textSize="15sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/headpic" />
+
+    <ImageView
+        android:id="@+id/il1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/qb_px_1"
+        android:layout_marginLeft="@dimen/qb_px_15"
+        android:layout_marginRight="@dimen/qb_px_15"
+        android:background="@drawable/shape_line"
+        app:layout_constraintTop_toBottomOf="@id/account" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/qb_px_45"
+        android:layout_marginLeft="@dimen/qb_px_15"
+        android:gravity="center"
+        android:text="联系人事"
+        android:textColor="#43496a"
+        android:textSize="15sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/il1" />
+
+    <TextView
+        android:id="@+id/pm"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/qb_px_45"
+        android:layout_marginRight="@dimen/qb_px_15"
+        android:gravity="center"
+        android:text=""
+        android:textColor="#c2c6da"
+        android:textSize="15sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/il1" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/qb_px_1"
+        android:layout_marginLeft="@dimen/qb_px_15"
+        android:layout_marginRight="@dimen/qb_px_15"
+        android:background="@drawable/shape_line"
+        app:layout_constraintTop_toBottomOf="@id/pm" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/qb_px_45"
+        android:layout_marginLeft="@dimen/qb_px_15"
+        android:gravity="center"
+        android:text="清除缓存"
+        android:textColor="#43496a"
+        android:textSize="15sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pm" />
+
+
+    <ImageView
+        android:id="@+id/ivclick"
+        android:layout_width="@dimen/qb_px_45"
+        android:layout_height="@dimen/qb_px_45"
+        android:padding="@dimen/qb_px_15"
+        android:src="@mipmap/ic_click"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pm" />
+
+    <TextView
+        android:id="@+id/cache"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/qb_px_45"
+        android:gravity="center"
+        android:text="0.0MB"
+        android:textColor="#43496a"
+        android:textSize="15sp"
+        app:layout_constraintRight_toLeftOf="@id/ivclick"
+        app:layout_constraintTop_toBottomOf="@id/pm" />
+
+    <ImageView
+        android:id="@+id/line4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/qb_px_1"
+        android:layout_marginLeft="@dimen/qb_px_15"
+        android:layout_marginRight="@dimen/qb_px_15"
+        android:background="@drawable/shape_line"
+        app:layout_constraintTop_toBottomOf="@id/cache" />
+
+
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/rl_log_off"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@id/line4">-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="@dimen/qb_px_45"-->
+            <!--android:layout_marginLeft="@dimen/qb_px_15"-->
+            <!--android:gravity="center"-->
+            <!--android:text="注销账号"-->
+            <!--android:textColor="#43496a"-->
+            <!--android:textSize="15sp" />-->
+
+        <!--<ImageView-->
+            <!--android:layout_width="@dimen/qb_px_45"-->
+            <!--android:layout_height="@dimen/qb_px_45"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:padding="@dimen/qb_px_15"-->
+            <!--android:src="@mipmap/ic_click" />-->
+
+
+    <!--</RelativeLayout>-->
+
+
+    <Button
+        android:id="@+id/btnLoginOut"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/qb_px_45"
+        android:layout_marginLeft="@dimen/qb_px_60"
+        android:layout_marginTop="@dimen/qb_px_80"
+        android:layout_marginRight="@dimen/qb_px_60"
+        android:background="@drawable/shape_login_out"
+        android:text="退出登录"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cache" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

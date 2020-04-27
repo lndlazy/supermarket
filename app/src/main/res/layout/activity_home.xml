@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <!--tabIndicatorColor：指示器的颜色-->
+    <!--tabIndicatorHeight：指示器的高度，可设置为0，相当于没有指示器-->
+    <!--tabTextColor：Tab未选中时字体的颜色-->
+    <!--tabSelectedTextColor：Tab选中时字体的颜色-->
+    <!--tabTextAppearance：Tab内文字的样式，TabLayout没有提供直接属性设置文字大小，需通过该属性指定style样式从而改变文字大小-->
+    <!--tabMode：Tab的显示模式，默认为fixed（固定不能滑动，标签很多时会被挤压），可设置为scrollable（标签很多时可向左滑动）-->
+    <!--tabGravity：内容的显示模式，可选center（居中）和fill（填充）-->
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/qb_px_100"
+            android:layout_marginRight="@dimen/qb_px_100"
+            app:tabIndicatorColor="#43496a"
+            app:tabIndicatorFullWidth="false"
+            app:tabSelectedTextColor="#43496a"
+            app:tabTextColor="#8e92a6">
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tabItem1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/supermarket_map" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tabItem2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/supermarket_list" />
+
+        </com.google.android.material.tabs.TabLayout>
+
+        <ImageView
+            android:id="@+id/my"
+            android:layout_width="@dimen/qb_px_40"
+            android:layout_height="@dimen/qb_px_40"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/qb_px_5"
+            android:padding="@dimen/qb_px_10"
+            android:src="@mipmap/ic_my" />
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/qb_px_45"
+        android:layout_marginLeft="@dimen/qb_px_15"
+        android:layout_marginRight="@dimen/qb_px_15"
+        android:background="@drawable/shape_search_bg"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/qb_px_45"
+            android:layout_height="@dimen/qb_px_45"
+            android:padding="@dimen/qb_px_15"
+            android:src="@mipmap/ic_search" />
+
+        <EditText
+            android:id="@+id/etKey"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="@string/search_shop"
+            android:imeOptions="actionSearch"
+            android:paddingLeft="@dimen/qb_px_5"
+            android:singleLine="true"
+            android:textColor="#c2c6da"
+            android:textColorHint="#c2c6da"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/qb_px_10">
+
+    </FrameLayout>
+
+
+</LinearLayout>

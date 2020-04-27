@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/qb_px_10"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!--<RelativeLayout-->
+            <!--android:id="@+id/tt"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/qb_px_50"-->
+            <!---->
+            <!---->
+            <!-->-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/back"-->
+                <!--android:layout_width="@dimen/qb_px_50"-->
+                <!--android:layout_height="@dimen/qb_px_50"-->
+                <!--android:padding="@dimen/qb_px_15"-->
+                <!--android:src="@mipmap/ic_back" />-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_centerInParent="true"-->
+                <!--android:gravity="center"-->
+                <!--android:text="门店详情"-->
+                <!--android:textColor="#43496a"-->
+                <!--android:textSize="18sp" />-->
+
+        <!--</RelativeLayout>-->
+
+        <TextView
+            android:id="@+id/lll"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/qb_px_5"
+            android:height="@dimen/qb_px_2"
+            android:background="#f6f6f6"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/simpledrawView"
+            android:layout_width="@dimen/qb_px_120"
+            android:layout_height="@dimen/qb_px_100"
+            android:layout_marginTop="@dimen/qb_px_5"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lll"
+            fresco:failureImage="@mipmap/ic_market_small"
+            fresco:placeholderImage="@mipmap/ic_market_small" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/qb_px_30"
+            android:layout_marginLeft="@dimen/qb_px_10"
+            android:gravity="center"
+            android:text="海底捞水果超市"
+            android:textColor="#43496a"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toRightOf="@id/simpledrawView"
+            app:layout_constraintTop_toTopOf="@id/simpledrawView" />
+
+        <TextView
+            android:id="@+id/introduce"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/qb_px_30"
+            android:layout_marginLeft="@dimen/qb_px_10"
+            android:gravity="center_vertical"
+            android:text="北京市顺义区空港融汇园优客工厂15-3"
+            android:textColor="#c2c6dc"
+            app:layout_constraintLeft_toRightOf="@id/simpledrawView"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title" />
+
+        <ImageView
+            android:id="@+id/ivdistance"
+            android:layout_width="@dimen/qb_px_20"
+            android:layout_height="@dimen/qb_px_20"
+            android:layout_marginLeft="@dimen/qb_px_7"
+            android:padding="@dimen/qb_px_3"
+            android:src="@mipmap/ic_distance"
+            app:layout_constraintBottom_toBottomOf="@id/simpledrawView"
+            app:layout_constraintLeft_toRightOf="@id/simpledrawView" />
+
+        <TextView
+            android:id="@+id/distance"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/qb_px_20"
+            android:gravity="center"
+            android:text="6.5km"
+            android:textColor="#c2c6da"
+            app:layout_constraintBottom_toBottomOf="@id/simpledrawView"
+            app:layout_constraintLeft_toRightOf="@id/ivdistance" />
+
+        <TextView
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/qb_px_1"
+            android:layout_marginLeft="@dimen/qb_px_15"
+            android:layout_marginTop="@dimen/qb_px_5"
+            android:layout_marginRight="@dimen/qb_px_15"
+            android:background="@drawable/shape_line"
+            app:layout_constraintTop_toBottomOf="@id/distance"
+            app:layout_goneMarginTop="@dimen/qb_px_5" />
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="@dimen/qb_px_220"
+            android:layout_height="@dimen/qb_px_40"
+            android:layout_marginLeft="@dimen/qb_px_10"
+            android:layout_marginTop="@dimen/qb_px_10"
+            android:gravity="center_vertical"
+            android:text="北京市顺义区义区北京市顺"
+            android:textSize="15sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/line" />
+
+        <TextView
+            android:id="@+id/lookLocation"
+            android:layout_width="@dimen/qb_px_100"
+            android:layout_height="@dimen/qb_px_40"
+            android:layout_marginRight="@dimen/qb_px_15"
+            android:background="@drawable/shape_detail_bg"
+            android:gravity="center"
+            android:text="查看位置"
+            android:textColor="@android:color/white"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/address" />
+
+        <TextView
+            android:id="@+id/tll"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/qb_px_10"
+            android:layout_marginTop="@dimen/qb_px_10"
+            android:background="#f6f6ff"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lookLocation"
+            app:layout_goneMarginTop="@dimen/qb_px_5" />
+
+        <ImageView
+            android:id="@+id/sdvContact"
+            android:layout_width="@dimen/qb_px_50"
+            android:layout_height="@dimen/qb_px_50"
+            android:layout_marginLeft="@dimen/qb_px_7"
+            android:layout_marginTop="@dimen/qb_px_5"
+            android:padding="@dimen/qb_px_8"
+            android:src="@mipmap/ic_toux"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tll" />
+
+        <!--<com.facebook.drawee.view.SimpleDraweeView-->
+        <!--android:id="@+id/sdvContact"-->
+        <!--android:layout_width="@dimen/qb_px_50"-->
+        <!--android:layout_height="@dimen/qb_px_50"-->
+        <!--android:layout_marginTop="@dimen/qb_px_5"-->
+        <!--android:src="@mipmap/ic_toux"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@id/tll"-->
+        <!--fresco:failureImage="@mipmap/ic_toux"-->
+        <!--fresco:placeholderImage="@mipmap/ic_toux" />-->
+
+        <TextView
+            android:id="@+id/shopContact"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/qb_px_50"
+            android:layout_marginLeft="@dimen/qb_px_10"
+            android:gravity="center"
+            android:text="王大米(店员)"
+            android:textColor="#43486d"
+            app:layout_constraintBottom_toBottomOf="@id/sdvContact"
+            app:layout_constraintLeft_toRightOf="@id/sdvContact"
+            app:layout_constraintTop_toTopOf="@id/sdvContact" />
+
+        <ImageView
+            android:id="@+id/ivcall"
+            android:layout_width="@dimen/qb_px_25"
+            android:layout_height="@dimen/qb_px_25"
+            android:layout_marginRight="@dimen/qb_px_15"
+            android:padding="@dimen/qb_px_2"
+            android:src="@mipmap/ic_call"
+            app:layout_constraintBottom_toBottomOf="@id/sdvContact"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/sdvContact" />
+
+        <TextView
+            android:id="@+id/bg2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/qb_px_10"
+            android:layout_marginTop="@dimen/qb_px_10"
+            android:background="#fbfbfc"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/sdvContact"
+            app:layout_goneMarginTop="@dimen/qb_px_5" />
+
+        <TextView
+            android:id="@+id/tvsurround"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/qb_px_30"
+            android:layout_marginLeft="@dimen/qb_px_15"
+            android:gravity="center"
+            android:text="周围样貌"
+            android:textColor="#43486d"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bg2" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/qb_px_10"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvsurround">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <ImageView
+            android:id="@+id/iv_no_data"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/qb_px_100"
+            android:padding="@dimen/qb_px_20"
+            android:src="@mipmap/ic_no_data"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvsurround" />
+
+        <TextView
+            android:id="@+id/tv_no_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="店家还未上传数据"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_no_data" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>
